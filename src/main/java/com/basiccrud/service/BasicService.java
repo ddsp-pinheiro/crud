@@ -32,4 +32,8 @@ public class BasicService {
         return basicRepository.findByName(name).orElseThrow(() -> new NotFoundException(NAME_NOT_FOUND));
     }
 
+    public void deleteById(Long id){
+        basicRepository.deleteById(id);
+    }
+
 }

@@ -46,4 +46,10 @@ public class BasicController {
         return basicMapper.toResponse(entity);
     }
 
+    @DeleteMapping("/{id}")
+    @ResponseStatus(value = HttpStatus.NO_CONTENT)
+    public void deleteId(@PathVariable Long id){
+        basicService.deleteById(id);
+    }
+
 }
