@@ -21,7 +21,7 @@ public interface BasicMapper {
      @Mappings({
              @Mapping(target = "id", source = "id")
      })
-    BasicEntity toEntity(BasicRequest basicRequest, String id);
+    BasicEntity toEntity(BasicRequest basicRequest, Long id);
 
 
 }
